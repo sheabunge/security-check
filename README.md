@@ -7,7 +7,7 @@ Help combat spam form submissions by forcing the user to answer a simple math su
 Include the class file in your application and initialize the class. The first argument is the prefix that will be used for form fields.
 
 ```php
-require_once __DIR__ . '/lib/class-security-check';
+require_once __DIR__ . '/lib/class-security-check.php';
 $security_check = new Security_Check( 'security_question_' );
 ```
 
@@ -26,6 +26,6 @@ Remember check the value of the `Security_Check::check_validation()` method befo
 if ( $security_check->check_validation ) {
 	/* Security check passed! */
 } else {
-	/* Security check failed :( */
+	/* Security check failed */
 }
 ```
